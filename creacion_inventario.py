@@ -18,10 +18,10 @@ uid = sock_common.login(dbname, username, pwd)
 sock = xmlrpclib.ServerProxy('http://demo_server:8069/xmlrpc/object',context=gcontext)
 
 location_id = sock.execute(dbname,uid,pwd,'stock.location','search',[('usage','=','internal')])
-product_id = sock.execute(dbname,uid,pwd,'product.product','search',[('default_code','=','PROD_STOCK')])
+product_id = sock.execute(dbname,uid,pwd,'product.product','search',[('default_code','=','PROD_STOCK_1')])
 
 vals_inv_header = {
-	'name': 'Test inventario',
+	'name': 'Test inventario #2',
 	#'location_ids': location_id[0],
 	'prefill_counted_quantity': 'counted'
 	}
@@ -33,13 +33,15 @@ vals_line = {
 	'inventory_id': inv_header,
 	'location_id': location_id[0],
 	'product_id': product_id[0],
-	'product_qty': 600
+	'product_qty': 555
 }
 line_id = sock.execute(dbname,uid,pwd,'stock.inventory.line','create',vals_line)
 print line_id
+#action_id = sock.execute(dbname,uid,pwd,'stock.inventory','action_validate',[inv_header])
+#print action_id
 
-serial_id = sock.execute(dbname,uid,pwd,'stock.production.lot','search',[('name','=','123')])
-product_id = sock.execute(dbname,uid,pwd,'product.product','search',[('default_code','=','PROD_SERIE')])
+serial_id = sock.execute(dbname,uid,pwd,'stock.production.lot','search',[('name','=','0000003')])
+product_id = sock.execute(dbname,uid,pwd,'product.product','search',[('default_code','=','PROD_SERIE_2')])
 
 vals_line = {
 	'inventory_id': inv_header,
