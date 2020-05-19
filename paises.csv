@@ -1,21 +1,21 @@
-ref,name,state_id
-1001,Cliente 1,Salta
-1002,Cliente 2,Buenos Aires
-1003,Cliente 3,Salta
-1004,Cliente 4,Buenos Aires
-1005,Cliente 5,Salta
-1006,Cliente 6,Buenos Aires
-1007,Cliente 7,Salta
-1008,Cliente 8,Buenos Aires
-1009,Cliente 9,Salta
-1010,Cliente 10,Buenos Aires
-1011,Cliente 11,Salta
-1012,Cliente 12,Buenos Aires
-1013,Cliente 13,Salta
-1014,Cliente 14,Buenos Aires
-1015,Cliente 15,Salta
-1016,Cliente 16,Buenos Aires
-1017,Cliente 17,Salta
-1018,Cliente 18,Buenos Aires
-1019,Cliente 19,Salta
-1020,Cliente 20,Buenos Aires
+ref,name,state_id,l10n_latam_identification_type_id,vat
+1001,Cliente 1,Salta,CUIT,20-23008021-7
+1002,Cliente 2,Buenos Aires,DNI,23.008.021
+1003,Cliente 3,Salta,,
+1004,Cliente 4,Buenos Aires,,
+1005,Cliente 5,Salta,,
+1006,Cliente 6,Buenos Aires,,
+1007,Cliente 7,Salta,,
+1008,Cliente 8,Buenos Aires,,
+1009,Cliente 9,Salta,,
+1010,Cliente 10,Buenos Aires,,
+1011,Cliente 11,Salta,,
+1012,Cliente 12,Buenos Aires,,
+1013,Cliente 13,Salta,,
+1014,Cliente 14,Buenos Aires,,
+1015,Cliente 15,Salta,,
+1016,Cliente 16,Buenos Aires,,
+1017,Cliente 17,Salta,,
+1018,Cliente 18,Buenos Aires,,
+1019,Cliente 19,Salta,,
+1020,Cliente 20,Buenos Aires,,
