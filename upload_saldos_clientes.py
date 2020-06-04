@@ -39,25 +39,21 @@ for i,row in enumerate(csv_reader):
 	if type(partner_id) == list:
 		partner_id = partner_id[0]
 	vals = {
-		'date': '2020-05-20',
+		'date': '2020-06-04',
 		'partner_id': partner_id,
 		'journal_id': 28,
 		'company_id': 4,
-		'ref': 'SAN RAFAEL v2 - SALDO INICIAL CLIENTE ' + str(row['COD']),
+		'ref': 'COLOMBIA - SALDO INICIAL CLIENTE ' + str(row['COD']),
 		'type': 'entry'
 		}
 	amount = float(row['SALDO'].replace(',',''))
-	if row['MONEDA'] == 'ARS':
-		currency_id = 'ARS'
-	if row['MONEDA'] == 'U$S':
-		currency_id = 'USD'
-	if row['MONEDA'] == 'EUR':
-		currency_id = 'EUR'
-	currency_id = models.execute_kw(db,uid,pwd,'res.currency','search',[[('name','=',currency_id)]])
 	account_move_id = models.execute_kw(db, uid, pwd, 'account.move', 'create', [vals], {'context' :{'check_move_validity': False}})
 	print account_move_id
 
 	amount = abs(int(row['SALDO']))
+	# '-302'
+	# int('-302') = -302
+	# abs(-302) = 302
 	vals_debit = {
 		# deudores por venta
 		'account_id': 307,
@@ -69,10 +65,6 @@ for i,row in enumerate(csv_reader):
 		#'currency_id': currency_id[0],
 		'company_id': 4,
 	}
-	if row['MONEDA'] == 'U$S':
-		vals_debit['amount_currency'] = amount
-              	vals_debit['debit'] = amount * 63
-              	vals_debit['currency_id'] = currency_id[0]
         debit_id = models.execute_kw(db, uid, pwd, 'account.move.line', 'create', [vals_debit], {'context' :{'check_move_validity': False}})
         print debit_id
         vals_credit = {
@@ -85,10 +77,6 @@ for i,row in enumerate(csv_reader):
 		#'currency_id': currency_id[0],
 		'company_id': 4
                 }
-	if row['MONEDA'] == 'U$S':
-                vals_credit['amount_currency'] = amount * (-1)
-                vals_credit['credit'] = abs(amount) * 63
-              	vals_credit['currency_id'] = currency_id[0]
         credit_id = models.execute_kw(db, uid, pwd, 'account.move.line', 'create', [vals_credit], {'context' :{'check_move_validity': False}})
         print credit_id
 	#try:
