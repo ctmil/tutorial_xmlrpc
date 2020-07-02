@@ -21,6 +21,7 @@ sock = xmlrpclib.ServerProxy('http://capacitacion:8069/xmlrpc/object',context=gc
 f = open('paises.csv','rt')
 reader = csv.DictReader(f)
 
+"""
 for row in reader:
 	print row
 	state_id = sock.execute(dbname,uid,pwd,'res.country.state','search',[('name','=',row['state_id'])])
@@ -49,3 +50,4 @@ for row in reader:
 		print return_id
 
 f.close()
+"""
