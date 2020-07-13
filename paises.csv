@@ -1,21 +1,252 @@
-ref,name,state_id,l10n_latam_identification_type_id,vat
-1001,Cliente 1,Salta,CUIT,20-23008021-7
-1002,Cliente 2,Buenos Aires,DNI,23.008.021
-1003,Cliente 3,Salta,,
-1004,Cliente 4,Buenos Aires,,
-1005,Cliente 5,Salta,,
-1006,Cliente 6,Buenos Aires,,
-1007,Cliente 7,Salta,,
-1008,Cliente 8,Buenos Aires,,
-1009,Cliente 9,Salta,,
-1010,Cliente 10,Buenos Aires,,
-1011,Cliente 11,Salta,,
-1012,Cliente 12,Buenos Aires,,
-1013,Cliente 13,Salta,,
-1014,Cliente 14,Buenos Aires,,
-1015,Cliente 15,Salta,,
-1016,Cliente 16,Buenos Aires,,
-1017,Cliente 17,Salta,,
-1018,Cliente 18,Buenos Aires,,
-1019,Cliente 19,Salta,,
-1020,Cliente 20,Buenos Aires,,
+Name,Code
+Afganistán,AF
+Albania,AL
+Alemania,DE
+Andorra,AD
+Angola,AO
+Anguilla,AI
+Antigua y Barbuda,AG
+Antártida,AQ
+Arabia Saudita,SA
+Argelia,DZ
+Argentina,AR
+Armenia,AM
+Aruba,AW
+Australia,AU
+Austria,AT
+Azerbaiyán,AZ
+Bahamas,BS
+Bahréin,BH
+Bangladesh,BD
+Barbados,BB
+Belize,BZ
+Benín,BJ
+Bermudas,BM
+Bhután,BT
+Bielorrusia,BY
+Birmania,MM
+Bolivia,BO
+"Bonaire, San Eustaquio y Saba",BQ
+Bosnia-Herzegovina,BA
+Botsuana,BW
+Brasil,BR
+Brunei Darussalam,BN
+Bulgaria,BG
+Burkina Faso,BF
+Burundi,BI
+Bélgica,BE
+Cabo Verde,CV
+Camboya,KH
+Camerún,CM
+Canadá,CA
+Chad,TD
+Chile,CL
+China,CN
+Chipre,CY
+Colombia,CO
+Comores,KM
+Congo,CG
+Corea del Norte,KP
+Corea del Sur,KR
+Costa Rica,CR
+Costa de Marfil,CI
+Croacia,HR
+Cuba,CU
+Curaçao,CW
+Dinamarca,DK
+Dominica,DM
+EE.UU. Islas Exteriores Menores,UM
+Ecuador,EC
+Egipto,EG
+El Salvador,SV
+Emiratos Árabes Unidos,AE
+Eritrea,ER
+Eslovaquia,SK
+Eslovenia,SI
+España,ES
+Estado de Palestina,PS
+Estados Unidos,US
+Estonia,EE
+Etiopía,ET
+Federación Rusa,RU
+Fiji,FJ
+Filipinas,PH
+Finlandia,FI
+Francia,FR
+Gabón,GA
+Gambia,GM
+Georgia,GE
+Ghana,GH
+Gibraltar,GI
+Granada,GD
+Grecia,GR
+Guadalupe,GP
+Guam,GU
+Guatemala,GT
+Guayana,GY
+Guayana Francesa,GF
+Guernsey,GG
+Guinea,GN
+Guinea Ecuatorial,GQ
+Guinea-Bisáu,GW
+Haití,HT
+Holanda,NL
+Honduras,HN
+Hong Kong,HK
+Hungría,HU
+India,IN
+Indonesia,ID
+Irak,IQ
+Irlanda,IE
+Irán,IR
+Isla Bouvet,BV
+Isla Norfolk,NF
+Isla de Man,IM
+Isla de Navidad,CX
+Islandia,IS
+Islas Caimán,KY
+Islas Cocos (Keeling),CC
+Islas Cook,CK
+Islas Feroe,FO
+Islas Georgia del sur y Sandwich del sur,GS
+Islas Heard y McDonald,HM
+Islas Malvinas,FK
+Islas Marianas del Norte,MP
+Islas Marshall,MH
+Islas Pitcairn,PN
+Islas Salomón,SB
+Islas Turcas y Caicos,TC
+Islas Vírgenes (Británicas),VG
+Islas Vírgenes (EE.UU.),VI
+Islas Åland,AX
+Israel,IL
+Italia,IT
+Jamaica,JM
+Japón,JP
+Jersey,JE
+Jordania,JO
+Kazajstán,KZ
+Kenia,KE
+Kirguistán,KG
+Kiribati,KI
+Kosovo,XK
+Kuwait,KW
+Laos,LA
+Lesotho,LS
+Letonia,LV
+Liberia,LR
+Libia,LY
+Liechtenstein,LI
+Lituania,LT
+Luxemburgo,LU
+Líbano,LB
+Macao,MO
+"Macedonia, Antigua república yugoslava de",MK
+Madagascar,MG
+Malasia,MY
+Malawi,MW
+Maldivas,MV
+Mali,ML
+Malta,MT
+Marruecos,MA
+Martinica,MQ
+Mauricio,MU
+Mauritania,MR
+Mayotte,YT
+Mercedeslandia,M2
+Micronesia,FM
+Moldavia,MD
+Mongolia,MN
+Montenegro,ME
+Montserrat,MS
+Mozambique,MZ
+México,MX
+Mónaco,MC
+Namibia,NA
+Nauru,NR
+Nepal,NP
+Nicaragua,NI
+Nigeria,NG
+Niue,NU
+Noruega,NO
+Nueva Caledonia,NC
+Nueva Zelanda,NZ
+Níger,NE
+Omán,OM
+Pakistán,PK
+Palau,PW
+Panamá,PA
+Papúa Nueva Guinea,PG
+Paraguay,PY
+Perú,PE
+Polinesia Francesa,PF
+Polonia,PL
+Portugal,PT
+Puerto Rico,PR
+Qatar,QA
+Reino Unido,GB
+República Centro Africana,CF
+República Checa,CZ
+República Democrática del Congo,CD
+República Dominicana,DO
+Reunión,RE
+Ruanda,RW
+Rumania,RO
+Samoa,WS
+Samoa Americana,AS
+San Bartolomé,BL
+San Cristóbal y Nieves,KN
+San Marino,SM
+San Martín (parte holandesa),SX
+San Martín (zona francesa),MF
+San Pierre y Miquelon,PM
+San Vicente y las Granadinas,VC
+"Santa Elena, Ascensión y Tristán de Acuña ",SH
+Santa Lucía,LC
+Santa Sede (Ciudad Estado del Vaticano),VA
+Santo Tomé y Príncipe,ST
+Senegal,SN
+Serbia,RS
+Seychelles,SC
+Sierra Leona,SL
+Singapur,SG
+Siria,SY
+Somalia,SO
+Sri Lanka,LK
+Suazilandia,SZ
+Sudáfrica,ZA
+Sudán,SD
+Sudán del Sur,SS
+Suecia,SE
+Suiza,CH
+Surinam,SR
+Svalbard y Jan Mayen,SJ
+Sáhara occidental,EH
+Tailandia,TH
+Taiwán,TW
+Tajikistán,TJ
+Tanzania,TZ
+Territorio británico del Océano Índico,IO
+Territorios franceses del sur,TF
+Timor Oriental,TL
+Togo,TG
+Tokelau,TK
+Tonga,TO
+Trinidad y Tobago,TT
+Turkmekistán,TM
+Turquía,TR
+Tuvalu,TV
+Túnez,TN
+Ucrania,UA
+Uganda,UG
+Uruguay,UY
+Uzbekistán,UZ
+Vanuatu,VU
+Venezuela,VE
+Vietnam,VN
+Wacanda,WC
+Wallis y Futuna,WF
+Yemen,YE
+Yibuti,DJ
+Zambia,ZM
+Zimbabwe,ZW

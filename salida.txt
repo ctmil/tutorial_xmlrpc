@@ -1,0 +1,5 @@
+3,AF,Afghanistan
+6,AL,Albania
+62,DZ,Algeria
+11,AS,American Samoa
+1,AD,Andorra
