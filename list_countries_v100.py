@@ -19,25 +19,29 @@ sock = xmlrpclib.ServerProxy('http://capacitacion:8069/xmlrpc/object',context=gc
 
 country_ids = sock.execute(dbname,uid,pwd,'res.country','search',[('name','=','Rodrigombia')])
 
+if country_ids:
+	print "Borrando Rodrigombia"
+	return_id = sock.execute(dbname,uid,pwd,'res.country','unlink',country_ids)
+	print return_id
+
+
 """
 if not country_ids:
 	vals = {
 		'name': 'Rodrigombia'
 		}
 	return_id = sock.execute(dbname,uid,pwd,'res.country','create',vals)
-	print return_id
+	print return_id 
 else:
-	currency_id = sock.execute(dbname,uid,pwd,'res.currency','search',[('name','=','USD')])
-	if currency_id:
-		vals = {
-			'currency_id': currency_id[0]
-			}
-		return_id = sock.execute(dbname,uid,pwd,'res.country','write',country_ids,vals)
-		print return_id
-"""
-
-if country_ids:
-	print "Borrando"
-	return_id = sock.execute(dbname,uid,pwd,'res.country','unlink',country_ids)
+	usd_id = sock.execute(dbname,uid,pwd,'res.currency','search',[('name','=','USD')])
+	vals = {
+		'currency_id': usd_id[0]
+		}
+	return_id = sock.execute(dbname,uid,pwd,'res.country','write',country_ids,vals)
 	print return_id
 
+for country_id in country_ids:
+	country_data = sock.execute(dbname,uid,pwd,'res.country','read',country_id,['name','currency_id'])
+	country_data = country_data[0]
+	print country_id,country_data
+"""
