@@ -5,7 +5,7 @@ from xmlrpc import client
 import openpyxl
 from datetime import datetime
 
-url = 'http://45.79.213.164:8069'
+url = 'http://localhost:8069'
 common = client.ServerProxy('{}/xmlrpc/2/common'.format(url))
 res = common.version()
 
